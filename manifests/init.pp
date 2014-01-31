@@ -4,7 +4,7 @@ class rvm(
   $install_dependencies=false,
   $group='rvm',
   $system_users=[],
-  $system_rubies={}) {
+  $system_rubies={}) inherits rvm::params {
 
   if $install_rvm {
 
